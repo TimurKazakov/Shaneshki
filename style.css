@@ -1,0 +1,123 @@
+body{
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-left-side{
+    /*width: 50%;*/
+
+    background-color: #015761;
+}
+.btn{
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    /*border: 4px solid #3b98cf;*/
+    color:white;
+    /*border-radius: 25px;*/
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 25px;
+
+}
+
+.main-navigation{
+    list-style: none;
+    display: flex;
+}
+
+
+.logo{
+    color: #f0d850;
+    font-size: 60px;
+    text-wrap: normal;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.intro-text-hi{
+    color: #f0d850;
+    font-size: 60px;
+    text-wrap: normal;
+    padding-left:300px;
+    padding-top: 150px;
+}
+.intro-text-main{
+    color: white;
+    font-size: 55px;
+    text-wrap: normal;
+    padding-left:150px;
+
+}
+
+.sidenav {
+    height: 250px; /* Full-height: remove this if you want "auto" height */
+    width: 80px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 40%; /* Stay at the top */
+    left: 0;
+    background-color: #f0d850 ; /* Black */
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-left: 5px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    margin: 2px 3px 2px 3px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.social-btn{
+    position: relative;
+   color: transparent;
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
+    margin: 0;
+
+}
+.social-btn> img{
+    position: relative;
+     width: 40px;
+     height: 40px;
+     margin: 15px ;
+    z-index: 5;
+
+
+ }
+.social-btn::after{
+   content: "";
+    z-index: 2;
+    width: 40px;
+    height: 30px;
+    top: 50px;
+    left: 15px;
+    position: absolute;
+    background: url("img/bear-icon.png") no-repeat;
+    background-size: cover;
+
+
+}
