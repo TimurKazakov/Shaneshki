@@ -4,40 +4,50 @@ body, div, img{
     padding: 0;
 }
 
-
+div{
+    border: 3px solid sandybrown;
+}
 header{
-
+    width:100%;
     display: flex;
     justify-content: center;
 }
 
 
 .header-left-side{
-    /*width: 50%;*/
-
+    width: 50%;
+    /*flex-grow: 1;*/
     background-color: #015761;
 }
 .header-right-side{
+    width: 50%;
     margin: 0;
     padding: 0;
+    /*flex-grow: 1;*/
+    background: #015761 url("img/IMG_4460.JPG") no-repeat 50% 50%;
+    background-size: cover;
+
+
 }
 .btn{
     display: inline-block;
-    width: 120px;
-    height: 25px;
-    /*border: 4px solid #3b98cf;*/
+    width: 150px;
+    height: 50px;
+    border: 4px solid #3b98cf;
     color:white;
-    /*border-radius: 25px;*/
+    border-radius: 25px;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    line-height: 25px;
+    line-height: 50px;
+    margin-left: 20px;
 
 }
 
 .main-navigation{
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -128,7 +138,7 @@ header{
 .main-container{
     width: 100%;
     height: 1000px;
-    background: brown url("img/IMG_4391.JPG") no-repeat;
+    background: brown url("img/IMG_4391.JPG") no-repeat ;
     background-size: cover;
     opacity: 0.7;
 }
@@ -141,5 +151,61 @@ header{
 }
 .hidden{
     display: none;
+
+
+}
+.people-expressions{
+    background-color: #015761;
+    display: flex;
+}
+.expressions{
+    position: relative;
+    width: 50%;
+    padding: 15px ;
+    color: white;
+    border-right: 1px solid black;
+}
+.signature{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.signature::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    left: -55px;
+    top: -25px;
+}
+.signature--mundo::before{
+    background: brown url("img/mundo.jpg") no-repeat;
+    background-size: cover;
+}
+.signature--stethem::before{
+    background: brown url("img/stethem.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.place-of-residence{
+    display: flex;
+   height:550px;
+
+}
+.place-of-residence__description{
+    width: 30%;
+
+}
+
+.place-of-residence__photo{
+    width: 65%;
+    background: brown url("img/sevas-bor.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.place-of-residence__description__text{
+    font-size: 40px;
+    padding: 0 15px 10px 10px;
 
 }
